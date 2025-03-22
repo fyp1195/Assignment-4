@@ -2,7 +2,7 @@
 // Assignment 4
 // Student ID: [11069686]
 // Date: [22/03/2025]
-// Implement the special functions and operators in the particle class
+// implementation of the particle class
 
 #include "particle.h"
 #include <iostream>
@@ -43,6 +43,7 @@ particle::~particle()
 // Assignment operator
 particle& particle::operator=(const particle& other)
 {
+  std::cout << "Calling Assignment Operator" << std::endl;
   if (this != &other) 
   { // Avoid self-assignment
     particle_name = other.particle_name;

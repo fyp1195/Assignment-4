@@ -50,7 +50,8 @@ int main()
   std::cout << "---------------------" << std::endl;
 
   // Assignment operator of the first electron to a new electron
-  particle electron3 = electron1;
+  particle electron3;
+  electron3 = electron1;
   std::cout << "Copied Electron (Assignment Operator):" << std::endl;
   std::cout << "Copied Electron 1:" << std::endl;
   electron3.print_data();
@@ -59,6 +60,7 @@ int main()
   // Copy constructor of the first muon to a new muon
   particle muon3(muon1);
   std::cout << "Copied Muon (Copy Constructor):" << std::endl;
+  std::cout << "Copied Muon 1:" << std::endl;
   muon3.print_data();
   std::cout << "---------------------" << std::endl;
 
